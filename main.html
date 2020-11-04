@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Background Color</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<button><b><span style="background-clip: content-box">Switch Color</span></b></button>
+	<script type="text/javascript">
+		var color = ["#222f3e","#D35400 ","#E74C3C ","#AF7AC5","#7D3C98","#5499C7","#3498DB","#48C9B0","#F4D03F","#E67E22","#979A9A","#34495E","#17202A","#1B4F72","#76D7C4"];
+		var i = 0;
+		document.querySelector("button","span").addEventListener("click",
+			function(){
+				i = i < color.length ? ++i : 0;
+				document.querySelector("body").style.background = color[i]
+			})
+	</script>
+</body>
+</html>
